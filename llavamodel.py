@@ -12,9 +12,6 @@ folder_path = './images'
 all_images = []
 
 
-
-
-
 def getResponse():
     # Encode the image
     base64_image = encode_image(image_path)
@@ -40,6 +37,6 @@ for root, _, files in os.walk(folder_path):
         # Path to your image
         image_path = os.path.join(root, file)
         print('For image: ', file)
-        # img = Image.open(image_path)
-        # img.show()
+        img = Image.open(image_path)
+        img.show()
         getResponse()
