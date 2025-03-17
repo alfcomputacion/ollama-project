@@ -116,9 +116,10 @@ for root, _, files in os.walk(folder_path):
                 print(f"Google Maps link: {google_maps_link}")
             except:
                 print('no GPS info.')
-        print('___________________________________________________________________________')      
         # img = Image.open(image_path)
         # img.show()
         getResponse()
+        print(file)
+        print('___________________________________________________________________________')      
         # print("este:::::",xif[0])
 
